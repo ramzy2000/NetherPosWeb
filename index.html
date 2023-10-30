@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <title>Nether Position Calculator</title>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Nether Position Calculator</h1>
+    <p>Use the app to calculate the positions in the nether with relation to the overworld</p>
+  </div>
+
+  <form id="nether-pos-form" action="javascript:void(0)">
+    <div class="container">
+      <h1>Mode</h1>
+      <div class="form-group">
+        <label for="mode">Select Mode:</label>
+        <select class="form-control" id="mode">
+          <option>Get Nether Position</option>
+          <option>Get World Position</option>
+        </select>
+      </div>
+      <h1 id="instruction-label"></h1>
+      <div class="form-group">
+        <label for="xinput">X Position:</label>
+        <input type="number" class="form-control" id="xinput" placeholder="Enter x position" name="xinput" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group">
+        <label for="zinput">Z Position:</label>
+        <input type="number" class="form-control" id="zinput" placeholder="Enter z position" name="zinput" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <h1 id="result-label"></h1>
+    </div>
+  </form>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
